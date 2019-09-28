@@ -1,8 +1,9 @@
 function addTil(e) {
   e.preventDefault();
+  const inputVal = document.querySelector("input").value;
   //  1. Get the table body of the table
   const tableRow = document.querySelector("tbody");
-  const newRow = generateNewTableRow("New Row from JS");
+  const newRow = generateNewTableRow(inputVal);
   //  8. Append the new row to the table
   tableRow.appendChild(newRow);
 }
@@ -25,4 +26,4 @@ function generateNewTableRow(tilSummary: string) {
   return newRow;
 }
 
-document.getElementsByTagName("form")[0].addEventListener("submit", addTil);
+document.querySelector("form").addEventListener("submit", addTil);

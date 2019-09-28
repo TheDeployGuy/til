@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body {
+  background-color: #323b44;
+  color: white;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -15,11 +20,19 @@
   width: 100%;
 }
 .container > form > input {
-  margin: 10px 0;
+  display: block;
   width: 100%;
-  padding: 12px 20px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  background-color: initial;
+  background-clip: padding-box;
   border: none;
-  border-bottom: 2px solid #efefef;
+  border-bottom: 1px solid #ffa300;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .container > form > label {
@@ -35,8 +48,4 @@ table {
 td,
 th {
   border: 1px solid #dddddd;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
