@@ -19,7 +19,7 @@
   width: 100%;
   padding: 12px 20px;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid #efefef;
 }
 
 .container > form > label {
@@ -35,7 +35,6 @@ table {
 td,
 th {
   border: 1px solid #dddddd;
-  padding: 8px;
 }
 
 tr:nth-child(even) {
