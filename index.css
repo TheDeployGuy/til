@@ -25,3 +25,19 @@
 .container > form > label {
   font-size: 24px;
 }
+
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
