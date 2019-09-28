@@ -1,19 +1,27 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container > form {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  width: 100%;
 }
-
 .container > form > input {
   margin: 10px 0;
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+.container > form > label {
+  font-size: 24px;
 }
