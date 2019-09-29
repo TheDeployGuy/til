@@ -17,13 +17,15 @@ body {
 }
 
 .container > form {
-  width: 100%;
+  width: 80%;
+  text-align: center;
 }
 .container > form > input {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
+  font-size: 3rem;
+  text-align: center;
   line-height: 1.5;
   color: white;
   background-color: initial;
