@@ -1,39 +1,32 @@
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" type="text/css" href="index.css">
-</head>
-
-<body>
-	<div class="container">
-		<form>
-			<label for="newtil" hidden>What did you learn?</label>
-			<input type="text" id="newtil" placeholder="What did you learn?" />
-		</form>
-	</div>
-	<h2>History</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Summary</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>28/10/2019</td>
-				<td>This is a test post</td>
-			</tr>
-			<tr>
-				<td>28/10/2019</td>
-				<td>This is a test post</td>
-			</tr>
-		</tbody>
-	</table>
-	<script src="src/index.ts">
-	</script>
-</body>
-
+  <body>
+    <div class="container">
+      <form>
+        <label for="newtil" hidden>What did you learn?</label>
+        <input
+          type="text"
+          id="newtil"
+          placeholder="What did you learn?"
+          autocomplete="off"
+        />
+      </form>
+    </div>
+    <h2>History</h2>
+    <br />
+    <div class="row">
+      <time>28/10/2019</time>
+      <p>This is a test post.</p>
+    </div>
+    <div class="row">
+      <time>29/10/2019</time>
+      <p>This is a test post 2.</p>
+    </div>
+    <script src="src/index.ts"></script>
+  </body>
 </html>
