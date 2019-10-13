@@ -1,0 +1,7 @@
+{
+  "manifest_version": 1,
+  "name": "TIL - Tracking learning",
+  "version": "0.0.1",
+  "default_locale": "en",
+  "description": "A tracker for checking in what you learned each day."
+}

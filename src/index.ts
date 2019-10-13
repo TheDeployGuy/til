@@ -28,3 +28,10 @@ function generateNewTilRow(tilSummary: string) {
 }
 
 document.querySelector("form").addEventListener("submit", addTil);
+
+// Only register the service worker if its available in the browser.
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("../sw.js").then(_ => {
+    console.log("Service worker registered");
+  });
+}
