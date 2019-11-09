@@ -6,8 +6,7 @@ self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(STATIC_CACHE_NAME).then(cache => {
       console.log("[Service worker] Pre-caching app-shell");
-      cache.add("/src/index.ts");
-      cache.addAll(["/", "index.html", "index.css"]);
+       cache.addAll(["/", "/src/index.ts", "index.html", "index.css"]);
     })
   );
 });
