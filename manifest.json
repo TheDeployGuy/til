@@ -2,9 +2,10 @@
   "name": "TIL - Tracking learning",
   "description": "A tracker for checking in what you learned each day.",
   "short_name": "TIL",
-  "start_url": "/",
+  "start_url": "/index.html",
   "icons": [],
   "version": "0.0.1",
+  "display": "standalone",
   "default_locale": "en",
   "background_color": "#323b44",
   "theme_color": "#323b44"
