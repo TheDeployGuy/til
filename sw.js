@@ -1,4 +1,4 @@
-const STATIC_CACHE_NAME = "static-v2";
+const STATIC_CACHE_NAME = "static-v3";
 
 // As soon as our sw file receives the "install" event we cache the app-shell.
 self.addEventListener("install", event => {
