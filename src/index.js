@@ -1,11 +1,12 @@
 function addTil(e) {
   e.preventDefault();
-  const inputVal = document.querySelector("input").value;
+  const inputVal = document.querySelector("input");
   //  1. Get the table body of the table
   const tableRow = document.querySelector("body");
-  const newRow = generateNewTilRow(inputVal);
+  const newRow = generateNewTilRow(inputVal.value);
   //  8. Append the new row to the table
   tableRow.appendChild(newRow);
+  inputVal.value = "";
 }
 
 function generateNewTilRow(tilSummary) {
