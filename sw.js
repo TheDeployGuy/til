@@ -9,10 +9,15 @@ self.addEventListener("install", event => {
     caches.open(STATIC_CACHE_NAME).then(cache => {
       console.log("[Service worker] Pre-caching app-shell...");
       cache.addAll([
+        // TODO: Why do we need to cache this again??
         "/",
+        // Cache our main JS file
         "/src/index.js",
+        // Cache our main index.html file, if we had other html files we could also cache them here.
         "index.html",
+        // Cache our main index.css file
         "index.css",
+        // Cache our manifest.json file TBA...
         "manifest.json"
       ]);
     })
