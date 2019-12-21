@@ -50,7 +50,7 @@ self.addEventListener("fetch", event => {
   console.log("[Service worker] Fetching something...", event);
   // Overwrite the fetch request.
   event.respondWith(
-    // Urls are the keys to cache and event.request is the url (this looks in all caches so we need to cleanup old caches...), could end up serving old cache files.
+    // Urls are the keys to cache and event.request is the url (this looks in all caches so we need to cleanup old caches...or we could end up serving old cache files.)
     caches.match(event.request).then(res => {
       // If it is cached get the cache version. otherwise try fetch it
       if (res) {
