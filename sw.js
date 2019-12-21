@@ -8,8 +8,9 @@ self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(STATIC_CACHE_NAME).then(cache => {
       console.log("[Service worker] Pre-caching app-shell...");
+      // Note: We need to store exact requests your app is making, e.g caching '/' is important, think of these as requests not files.
       cache.addAll([
-        // TODO: Why do we need to cache this again??
+        // Cache the route of our application as that is what most people request, this is more than likely the index.html file but it doesn't have to be.
         "/",
         // Cache our main JS file
         "/src/index.js",
