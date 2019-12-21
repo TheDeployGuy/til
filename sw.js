@@ -7,7 +7,7 @@ self.addEventListener("install", event => {
   console.log("[Service worker] Installing SW...", event);
   event.waitUntil(
     caches.open(STATIC_CACHE_NAME).then(cache => {
-      console.log("[Service worker] Pre-caching app-shell");
+      console.log("[Service worker] Pre-caching app-shell...");
       cache.addAll([
         "/",
         "/src/index.js",
